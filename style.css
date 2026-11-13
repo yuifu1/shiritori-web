@@ -1,0 +1,68 @@
+.search {
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    #idInput {
+        width: 60px;
+        text-align: center;
+    }
+
+    #userNameInput {
+        width: 100px;
+        text-align: center;
+    }
+}
+
+.alert {
+    color: red;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+
+    .logger {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        gap: 5px;
+
+        .wordInput {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            #nextWord {
+                text-align: center;
+            }
+        }
+
+        #gameLog {
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            resize: none;
+        }
+
+    }
+
+}
+
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0 !important;
+    -moz-appearance:textfield !important;
+}

@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Yuiful's site</title>
+    <title>Shiritori</title>
     <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,40 +17,27 @@
         UserName:
         <input type="text" id="userNameInput" placeholder="UserName">
     </label>
-
-    <label>
-        RoomID:
-        <input type="number" id="idInput" class="no-spin" placeholder="0000">
-        <button id="joinRoom">参加</button>
-    </label>
-
-    <button id="createRoom">ルームを作成</button>
-
+    <button id="submitName">名前決定</button>
     <span class="alert"></span>
 
 </div>
 
 <div class="game" style="display: none">
 
-    <h4 class="roomId">RoomID: <span id="roomId"></span></h4>
     <h4 class="userName">UserName: <span id="userName"></span></h4>
-    <div class="playerList">
-        <h3>Player List</h3>
-        <div class="players">
-            // <p>
-        </div>
-    </div>
 
     <div class="logger">
         Last: <span id="lastWord"></span>Next: <span id="nextLetter"></span>
         <div class="wordInput">
-            <input type="text" placeholder="Next word" id="nextWord">
+            <input type="text" placeholder="Next word" id="nextWord" autocomplete="new-password">
             <button id="wordSubmit">送信</button>
         </div>
 
-        <span id="error"></span>
+        <span class="alert"></span>
 
         <textarea id="gameLog" readonly></textarea>
+        <p>これまでの単語数: <span id="counter">0</span></p>
+
     </div>
 
 
